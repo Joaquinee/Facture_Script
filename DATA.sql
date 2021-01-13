@@ -7,7 +7,6 @@ CREATE TABLE IF NOT EXISTS `factures` (
   `details` varchar(10000) DEFAULT NULL,
   `price` int(11) DEFAULT NULL,
   `payed` int(11) NOT NULL DEFAULT '1',
-  `notify` int(11) NOT NULL DEFAULT '0',
   `create_date` varchar(50) DEFAULT NULL,
   `payed_date` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)

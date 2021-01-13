@@ -5,7 +5,7 @@ Glissez les fichiers présent dans le fichier `client` dans votre MpMissions
 Ouvrez ensuite `Functions.hpp` puis ajoutez tous en bas :
 class Facture {
     tag = "fac";
-    class Dev {
+    class Factures {
         file = "core\facture";
         class searchListbox;
         class init;
@@ -61,7 +61,7 @@ Glissez les fichiers présent dans le fichier `server` dans votre life_server
 Ouvrez ensuite `config.cpp` puis ajoutez au dessus de `class MySQL_Database` :
 class Facture {
     tag = "fac_serv";
-    class Facture {
+    class Factures {
         file = "\life_server\Functions\Facture";
         class updateFacture;
         class getFacture;

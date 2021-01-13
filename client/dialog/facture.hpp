@@ -75,7 +75,7 @@ class facture {
     name= "facture";
     movingEnable = 0;
     enableSimulation = 1;
-    onLoad = "[[040116, 040117], 0] spawn A3URL_fnc_init";
+    onLoad = "[[040116, 040117], 0] spawn fac_fnc_init";
     class controlsBackground {
 		 class Life_RscTitleBackground: Life_RscText {
             colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
@@ -174,7 +174,7 @@ class facture {
 			y = 0.31994;
 			w = 0.275;
 			h = 0.42;
-			onLBSelChanged = "[(_this # 0),(_this # 1),0, 040118] spawn A3URL_fnc_onLbSelChanged";
+			onLBSelChanged = "[(_this # 0),(_this # 1),0, 040118] spawn fac_fnc_onLbSelChanged";
 
 		};
 		class RscEdit_1400: RscEdit
@@ -185,7 +185,7 @@ class facture {
 			w = 0.274065;
 			h = 0.0399945;
 			text = "";
-			onKeyUp = "[(_this # 0), 040117, 040118] spawn A3URL_fnc_searchListbox";
+			onKeyUp = "[(_this # 0), 040117, 040118] spawn fac_fnc_searchListbox";
 		};
 
 		class Text_Menu: Life_RscControlsGroup {
@@ -212,7 +212,7 @@ class facture_historique {
     name= "facture_historique";
     movingEnable = 0;
     enableSimulation = 1;
-    onLoad = "[[04011838, 04011839], 1] spawn A3URL_fnc_init";
+    onLoad = "[[04011838, 04011839], 1] spawn fac_fnc_init";
     class controlsBackground {
 		 class Life_RscTitleBackground: Life_RscText {
             colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
@@ -274,7 +274,7 @@ class facture_historique {
 			y = 0.31994;
 			w = 0.275;
 			h = 0.42;
-			onLBSelChanged = "[(_this # 0),(_this # 1),1,04011840 ] spawn A3URL_fnc_onLbSelChanged";
+			onLBSelChanged = "[(_this # 0),(_this # 1),1,04011840 ] spawn fac_fnc_onLbSelChanged";
 
 		};
 
@@ -304,7 +304,7 @@ class facture_historique {
 			w = 0.274065;
 			h = 0.0399945;
 			text = "";
-			onKeyUp = "[(_this # 0), 04011839, 04011840] spawn A3URL_fnc_searchListbox";
+			onKeyUp = "[(_this # 0), 04011839, 04011840] spawn fac_fnc_searchListbox";
 		};
     };
 };
@@ -313,7 +313,7 @@ class facture_emis {
     name= "facture_emis";
     movingEnable = 0;
     enableSimulation = 1;
-    onLoad = "[[05012014, 05012015], 2] spawn A3URL_fnc_init";
+    onLoad = "[[05012014, 05012015], 2] spawn fac_fnc_init";
     class controlsBackground {
 		 class Life_RscTitleBackground: Life_RscText {
             colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
@@ -363,7 +363,7 @@ class facture_emis {
 			y = 0.31994;
 			w = 0.275;
 			h = 0.42;
-			onLBSelChanged = "[(_this # 0),(_this # 1),2, 05012016] spawn A3URL_fnc_onLbSelChanged";
+			onLBSelChanged = "[(_this # 0),(_this # 1),2, 05012016] spawn fac_fnc_onLbSelChanged";
 
 		};
 		class Text_Menu: Life_RscControlsGroup {
@@ -392,7 +392,7 @@ class facture_emis {
 			w = 0.274065;
 			h = 0.0399945;
 			text = "";
-			onKeyUp = "[(_this # 0), 05012015, 05012016] spawn A3URL_fnc_searchListbox";
+			onKeyUp = "[(_this # 0), 05012015, 05012016] spawn fac_fnc_searchListbox";
 		};
     };
 };
@@ -403,7 +403,7 @@ class facture_create {
     name= "facture_create";
     movingEnable = 0;
     enableSimulation = 1;
-	onLoad = "[[05012043, 05012046], 3] spawn A3URL_fnc_init";
+	onLoad = "[[05012043, 05012046], 3] spawn fac_fnc_init";
     class controlsBackground {
 		 class Life_RscTitleBackground: Life_RscText {
             colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
@@ -483,7 +483,7 @@ class facture_create {
 		{
 			idc = -1;
 			text = "Envoyer"; //--- ToDo: Localize;
-			onButtonClick = "[] spawn A3URL_fnc_createFactureClient;";
+			onButtonClick = "[] spawn fac_fnc_createFactureClient;";
 			x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
             y = 0.8 - (1 / 25);
             w = (6.25 / 40);
