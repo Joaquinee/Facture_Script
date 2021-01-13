@@ -9,7 +9,7 @@ if (isNull _pl || isNil "_pl") exitWith {hint "Sélectionner une personne"};
 if (_emetteur isEqualTo "") exitWith {hint "Merci de spécifier un émetteur"};
 if ((count _details) <= 0) exitWith {hint parseText "Merci de spécififer un détails de facture";};
 if (_price < 0) exitWith {hint 'Vérifier votre prix'};
-[1, format["Vous venez de recevoir une facture de %1€, de %2", _emetteur] remoteExec ["life_fnc_broadcast", _pl];
+[1, format["Vous venez de recevoir une facture de %1, de %2€", _emetteur, _price]] remoteExec ["life_fnc_broadcast", _pl];
 [(getPlayerUID player), (getPlayerUID _pl), _details, _emetteur, _price, (name player), (name _pl)] remoteExec ["fac_serv_fnc_createFacture",2];
 closeDialog 0;
 hint 'Facture émise avec success';
