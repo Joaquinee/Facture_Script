@@ -79,3 +79,7 @@ class Facture {
     };
 };
 ```
+
+## Rendu en vidéo
+
+https://youtu.be/zgyolDdpwcA
